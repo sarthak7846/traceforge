@@ -124,6 +124,7 @@ export class ProjectService {
       input: createTraceDto.input,
       output: createTraceDto.output,
       metadata: createTraceDto.metadata,
+      ingestionStartedAt: Date.now()
     });
 
     return { accepted: true };
