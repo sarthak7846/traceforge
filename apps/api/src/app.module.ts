@@ -7,6 +7,7 @@ import { UserModule } from './user/user.module';
 import { OrganizationModule } from './organization/organization.module';
 import { MembershipModule } from './membership/membership.module';
 import { ProjectModule } from './project/project.module';
+import { AnalyticsModule } from './analytics/analytics.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { ProjectModule } from './project/project.module';
     OrganizationModule,
     MembershipModule,
     ProjectModule,
+    AnalyticsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
