@@ -1,7 +1,14 @@
-import type { NextConfig } from "next";
+import path from "path";
+import dotenv from "dotenv";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+dotenv.config({
+  path: path.resolve(process.cwd(), "../../.env"),
+});
+
+const nextConfig = {
+  env: {
+    OBSERVE_API_URL: process.env.OBSERVE_API_URL,
+  },
 };
 
 export default nextConfig;
